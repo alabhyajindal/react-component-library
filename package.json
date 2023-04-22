@@ -2,6 +2,7 @@
   "name": "@alabhyajindal/react-component-library",
   "version": "0.0.4",
   "description": "A React component library",
+  "type": "module",
   "scripts": {
     "rollup": "rollup -c"
   },
@@ -22,5 +23,8 @@
   "files": [
     "dist"
   ],
-  "types": "dist/index.d.ts"
+  "types": "dist/index.d.ts",
+  "dependencies": {
+    "tslib": "^2.5.0"
+  }
 }
