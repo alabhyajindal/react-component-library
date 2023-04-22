@@ -1,16 +1,19 @@
 {
-  "name": "react-component-library",
-  "version": "1.0.0",
-  "description": "",
+  "name": "@alabhyajindal/react-component-library",
+  "version": "0.0.1",
+  "description": "A React component library",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Alabhya Jindal",
   "license": "ISC",
   "devDependencies": {
     "@types/react": "^18.0.38",
     "react": "^18.2.0",
     "typescript": "^5.0.4"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/alabhyajindal"
   }
 }
