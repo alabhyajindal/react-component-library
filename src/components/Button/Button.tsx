@@ -1,5 +1,9 @@
 import React from 'react';
 
-export default function Button({ label }) {
-  return <button>{label}</button>;
+export interface ButtonProps {
+  label: string;
+}
+
+export default function Button(props: ButtonProps) {
+  return <button>{props.label}</button>;
 }
