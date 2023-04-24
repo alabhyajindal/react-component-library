@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
 
-type Data = {};
+interface BarData {
+  label: string;
+  value: number;
+}
 
 interface BarProps {
-  data: Data;
+  data: BarData[];
 }
 
 export default function Bar({ data }: BarProps) {
@@ -36,14 +39,16 @@ export default function Bar({ data }: BarProps) {
   };
 
   return (
-    <div style={barStyle}>
+    <div style={barStyle as React.CSSProperties}>
       {barData.map((bar, index) => (
         <div
           key={index}
-          style={{
-            ...barItemStyle,
-            height: `${bar.value * 10}px`,
-          }}
+          style={
+            {
+              ...barItemStyle,
+              height: `${bar.value * 10}px`,
+            } as React.CSSProperties
+          }
           onClick={() => handleBarClick(index)}
         >
           {bar.label}
